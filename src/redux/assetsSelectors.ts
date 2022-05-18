@@ -12,8 +12,8 @@ export const getAvailableAssets = (source: "supply" | "borrow") =>
     (state: RootState) => state.app,
     (assets, account, app) => {
       const filterKey = source === "supply" ? "can_deposit" : "can_borrow";
-      console.log(assets,'assets');
-      console.log(account,'account');
+      // console.log(assets,'assets');
+      // console.log(account,'account');
       // console.log('ssss',Object.keys(assets)
       // .filter((tokenId) => assets[tokenId].config[filterKey])
       // .filter((tokenId) => !hiddenAssets.includes(assets[tokenId].token_id)).map(item=>item)

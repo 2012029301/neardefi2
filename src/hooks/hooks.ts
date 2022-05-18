@@ -30,7 +30,11 @@ export function useConfig() {
 }
 
 export function useAccountId() {
-  return useAppSelector(getAccountId);
+  let accountId =  useAppSelector(getAccountId)
+ console.log('accountId',accountId);
+ 
+  return accountId
+  // return useAppSelector(getAccountId);
 }
 
 export function useNonFarmedAssets() {

@@ -38,7 +38,6 @@ export const fetchAssetsAndMetadata = createAsyncThunk(
     
     const assets = await getAssetsDetailed();
     const tokenIds = assets.map((asset) => asset.token_id);
-    console.log(assets,tokenIds,'assets');
     
     const metadata = await getAllMetadata(tokenIds);
     return { assets, metadata };

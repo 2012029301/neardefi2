@@ -34,3 +34,4 @@ export const getHasNonFarmedAssets = createSelector(
   (state: RootState) => state.account,
   (account) => account.portfolio.hasNonFarmedAssets,
 );
+

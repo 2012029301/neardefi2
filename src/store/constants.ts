@@ -44,4 +44,4 @@ export const CONTRACT_BETA = "contract.beta.burrow.near";
 
 export const isBeta = process.env.CONTRACT_NAME === CONTRACT_BETA;
 export const isMain = process.env.CONTRACT_NAME === CONTRACT_MAIN;
-console.log(isBeta,'isBeta',isMain,'isMain');
+// console.log(isBeta,'isBeta',isMain,'isMain');

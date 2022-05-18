@@ -2,7 +2,6 @@ import posthogJs from "posthog-js";
 
 const POSTHOG_KEY = process.env.POSTHOG_KEY as string;
 const POSTHOG_HOST ='https://rpc.testnet'|| process.env.POSTHOG_HOST as string;
-console.log( process.env.POSTHOG_HOST,' process.env.POSTHOG_HOST',process.env,'process.env');
 
 export const isPostHogEnabled = POSTHOG_KEY && POSTHOG_HOST;
 

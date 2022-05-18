@@ -19,7 +19,6 @@ const App = () => {
   const dispatch = useAppDispatch();
 
   const fetchData = () => {
-    console.log('fetchData');
 
     dispatch(fetchAssetsAndMetadata()).then(() => dispatch(fetchRefPrices()));
     dispatch(fetchAccount());

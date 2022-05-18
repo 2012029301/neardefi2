@@ -18,7 +18,6 @@ dotenv.config();
 
 const SENTRY_ORG = process.env.SENTRY_ORG as string;
 const SENTRY_PID = process.env.SENTRY_PID as unknown as number;
-console.log(process.env.SENTRY_ORG, 'process.env.SENTRY_ORG', process.env.SENTRY_PID, 'process.env.SENTRY_PID');
 
 const integrations = [new Integrations.BrowserTracing()] as Array<
   Integrations.BrowserTracing | SentryIntegration

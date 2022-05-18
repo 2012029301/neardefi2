@@ -109,7 +109,7 @@ export const transformAsset = (
   );
 
   const availableLiquidity$ = toUsd(temp2, asset).toLocaleString(undefined, USD_FORMAT);
- console.log(app,'app');
+//  console.log(app,'app');
  
   let accountAttrs = {
     supplied: 0,
@@ -149,7 +149,7 @@ export const transformAsset = (
   }
  
  
-  console.log('dddd');
+  // console.log('dddd');
   
   return {
     tokenId,

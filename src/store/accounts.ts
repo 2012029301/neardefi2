@@ -3,7 +3,7 @@ import { getBurrow } from "../utils";
 
 export const getAccounts = async (): Promise<IAccount[]> => {
   const { view, logicContract } = await getBurrow();
-
+  
   const accounts: IAccount[] = (await view(
     logicContract,
     ViewMethodsLogic[ViewMethodsLogic.get_accounts_paged],
